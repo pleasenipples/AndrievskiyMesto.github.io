@@ -1,0 +1,22 @@
+.user-info__edit-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 60px;
+  margin-top: 25px;
+  height: 20px;
+  font-size: 13px;
+  display: block;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  border-radius: 2px;
+}
+  
+.user-info__edit-button:hover {
+  background-color: white; 
+  color: black;
+}
+  
+.user-info__edit-button:focus {
+  outline-color: greenyellow;
+}

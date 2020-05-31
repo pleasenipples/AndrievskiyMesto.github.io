@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name">name</h1>
+          <p class="user-info__job">about</p>
+          <button class="user-info__edit-button">Edit</button>
+        </div>
+        <button class="button user-info__button">+</button>
+      </div>
+    </div>
+    <div class="places-list root__section">
+
+      <!-- Пример вёрстки карточки: -->
+
+     <!--  <div class="place-card">
+        <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
+          <button class="place-card__delete-icon"></button>
+        </div>
+        <div class="place-card__description">
+          <h3 class="place-card__name">Камчатка</h3>
+          <button class="place-card__like-icon"></button>
+        </div>
+      </div>-->
+
+      <!-- конец примера. -->
+
+    </div>
+    <div class="popup popup__new">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="new" novalidate>
+            <input type="text" name="name" class="popup__input" placeholder="Название" minlength="2" maxlength="30" required>
+            <span id="error-name" class="error-message"></span>
+
+            <input type="URL" name="link" class="popup__input" placeholder="Ссылка на картинку" required>
+            <span id="error-link" class="error-message"></span>
+
+            <button type="submit" class="button popup__button" disabled>+</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup__profile">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form id="profile" class="popup__form" name="profile" novalidate>
+            <input id="name" type="text" name="name" class="popup__input" placeholder="Имя" minlength="2" maxlength="30" required>
+            <span class="error-message"></span>
+
+            <input id="job" type="text" name="job" class="popup__input" placeholder="О себе" minlength="2" maxlength="30" required>
+            <span class="error-message"></span>
+
+            <button id="saveBtn" type="submit" class="button popup__button popup__button_save" disabled>Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup__image">
+      <div class="popup__content popup__content_image">
+        <img src="" alt="" class="popup__photo">
+        <img src="./images/close.svg" alt="" class="popup__close">
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="./js/Card.js"></script>
+  <script src="./js/CardList.js"></script>
+  <script src="./js/UserInfo.js"></script>
+  <script src="./js/FormValidator.js"></script>
+  <script src="./js/Popup.js"></script>
+  <script src="./js/PopupNewCard.js"></script>
+  <script src="./js/PopupUserInfo.js"></script>
+  <script src="./js/PopupZoom.js"></script>
+  <script src="./js/Api.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
