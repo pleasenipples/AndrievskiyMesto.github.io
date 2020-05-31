@@ -1,10 +1,14 @@
-/**
- * Поздравляю: теперь вы научились работать с сервером - получать данные и отправлять запросы.
- *
- * Замечания исправлены. Работа принята. Оставил несколько некритичных комментариев. Просьба не оставлять
- * их без внимания. Рефакторинг - неотъемлемая часть работы программиста. Всегда нужно стараться делать код лучше.
- *
- */
+import "../pages/index.css";
+import Api from './Api';
+import Card from './Card';
+import CardList from './CardList';
+import FormValidator from './FormValidator';
+//import Popup from './Popup';
+import PopupNewCard from './PopupNewCard';
+import PopupUserInfo from './PopupUserInfo';
+import PopupZoom from './PopupZoom';
+import UserInfo from './UserInfo';
+
 
 const root = document.querySelector('.root');
 const placeList = root.querySelector('.places-list');

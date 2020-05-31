@@ -1,4 +1,4 @@
-class Api {
+export default class Api {
     constructor (fetchArguments) {
         this.fetchArguments = fetchArguments;
     }
