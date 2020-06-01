@@ -4,7 +4,7 @@
 ## [Ссылка на рабочую версию проекта Mesto][1]
 
 v1.0.2
-Учебный проект Yandex Praktikum - Mesto
+Чтобы локально развернуть проект клонируйте репозиторий в локальную папку. Запустите `npm install`, далее `npm dun dev`
 Andrievskiy Andrey. Sprint 11.
 
 [1]: https://gazpolanski.github.io/AndrievskiyMesto.github.io/
