@@ -26,8 +26,11 @@ const errorMessages = {
    tooShort: 'Должно быть от 2 до 30 символов',
    typeMismatch: 'Здесь должна быть ссылка'
  };
+
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort10' : 'https://praktikum.tk/cohort10';
+
 const fetchArguments = {
-  baseUrl: 'https://praktikum.tk/cohort10',
+  baseUrl: serverUrl,
   headers: {
   authorization: 'd49b1202-45cc-4b8f-9106-b1e4c5de7d40',
   'Content-Type': 'application/json'
