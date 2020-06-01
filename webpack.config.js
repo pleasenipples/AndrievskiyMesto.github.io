@@ -37,7 +37,6 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            publicPath: 'img',
                             outputPath: 'img',
                             useRelativePath: true,
                             esModule: false,
@@ -48,31 +47,6 @@ module.exports = {
                         options: {
                         }
                     }
-                ]
-            },
-            /*{
-                test: /\.(png|jpg|gif|ico|svg)$/,
-                use: [
-                    'file-loader?name=./src/images/[name].[ext]', // указали папку, куда складывать изображения
-                    {
-                        loader: 'image-webpack-loader',
-                        options: {}
-                    },
-                ]
-            },*/
-           /* {
-                test: /\.(png|jpg|gif|ico|svg)$/,
-                loader: 'file-loader?name=./src/images/[name].[ext]' // указали папку, куда складывать изображения
-
-            },*/
-            {
-                test: /\.(woff2)$/,
-                use: [
-                    'file-loader?name=./src/vendor/fonts/[name].[ext]', // указали папку, куда складывать изображения
-                    {
-                        loader: 'image-webpack-loader',
-                        options: {}
-                    },
                 ]
             },
             {

@@ -1,8 +1,8 @@
 {
   "name": "andrievskiy_mesto",
   "homepage": "https://GazPolanski.github.io/AndrievskiyMesto.github.io/",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Training project Mesto. Allows you to add place cards and watch cards of other users.",
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
