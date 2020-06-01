@@ -27,9 +27,9 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use:  [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader'] // добавили минификацию CSS
+                use:  [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader'] 
             },
-            // пример настройки плагина image-webpack-loader
+
             {
                 test: /\.(png|jpg|gif|ico|svg)$/i,
                 use: [
