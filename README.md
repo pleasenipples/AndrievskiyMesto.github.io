@@ -1,3 +1,4 @@
+
 # Учебный проект Mesto
 
 
@@ -5,9 +6,9 @@
 
 v1.0.2
 
-
 Чтобы локально развернуть проект клонируйте репозиторий в локальную папку. Запустите `npm install`, далее `npm dun dev`.
 
+Учебный проект Yandex Praktikum - Mesto
 
 Andrievskiy Andrey. Sprint 11.
 
