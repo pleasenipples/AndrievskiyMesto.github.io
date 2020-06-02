@@ -1,10 +1,14 @@
-/**
- * Поздравляю: теперь вы научились работать с сервером - получать данные и отправлять запросы.
- *
- * Замечания исправлены. Работа принята. Оставил несколько некритичных комментариев. Просьба не оставлять
- * их без внимания. Рефакторинг - неотъемлемая часть работы программиста. Всегда нужно стараться делать код лучше.
- *
- */
+import "../pages/index.css";
+import Api from './Api';
+import Card from './Card';
+import CardList from './CardList';
+import FormValidator from './FormValidator';
+//import Popup from './Popup';
+import PopupNewCard from './PopupNewCard';
+import PopupUserInfo from './PopupUserInfo';
+import PopupZoom from './PopupZoom';
+import UserInfo from './UserInfo';
+
 
 const root = document.querySelector('.root');
 const placeList = root.querySelector('.places-list');
@@ -22,8 +26,11 @@ const errorMessages = {
    tooShort: 'Должно быть от 2 до 30 символов',
    typeMismatch: 'Здесь должна быть ссылка'
  };
+
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort10' : 'https://praktikum.tk/cohort10';
+
 const fetchArguments = {
-  baseUrl: 'https://praktikum.tk/cohort10',
+  baseUrl: serverUrl,
   headers: {
   authorization: 'd49b1202-45cc-4b8f-9106-b1e4c5de7d40',
   'Content-Type': 'application/json'

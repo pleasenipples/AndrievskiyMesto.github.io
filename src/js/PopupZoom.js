@@ -1,4 +1,5 @@
-class PopupZoom extends Popup {
+import Popup from './Popup';
+export default class PopupZoom extends Popup {
 
     addImageSrc(link) {
       const srcPhoto = this.container.querySelector('.popup__photo');
